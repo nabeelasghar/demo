@@ -21,7 +21,10 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'therubyracer', '~> 0.11.0beta5'
+group :libv8 do
+  gem 'libv8', "~> 3.11.8"
+end
 gem 'jquery-rails'
 group :production do
   gem 'pg', '0.12.2'
